@@ -1,0 +1,25 @@
+name: Simple Diff Report
+description: Post a PR delta digest with changed paths, +/- LOC, and top directories.
+author: Dmytro Paduchak
+branding:
+  icon: git-pull-request
+  color: blue
+inputs:
+  github-token:
+    description: Token to read the PR diff and post sticky comments.
+    required: false
+    default: ${{ github.token }}
+  top-dirs:
+    description: How many top-level directories to list by changed LOC.
+    required: false
+    default: "8"
+runs:
+  using: node20
+  main: dist/index.js
+outputs:
+  files-changed:
+    description: Number of changed files.
+  lines-added:
+    description: Lines added.
+  lines-removed:
+    description: Lines removed.
