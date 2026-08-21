@@ -16,10 +16,3 @@ inputs:
 runs:
   using: node20
   main: dist/index.js
-outputs:
-  files-changed:
-    description: Number of changed files.
-  lines-added:
-    description: Lines added.
-  lines-removed:
-    description: Lines removed.
