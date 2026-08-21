@@ -1,4 +1,4 @@
-name: Simple Diff Report
+name: Simple Diff Digest
 description: Post a PR delta digest with changed paths, +/- LOC, and top directories.
 author: Dmytro Paduchak
 branding:
